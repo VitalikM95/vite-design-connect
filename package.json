@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://VitalikM95.github.io/vite-design-connect",
+  "homepage": "https://VitalikM95.github.io/vite-design-connect/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
