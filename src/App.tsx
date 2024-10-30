@@ -1,25 +1,13 @@
 import { useState } from 'react'
-import {
-  About,
-  Features,
-  Footer,
-  Header,
-  Hero,
-  Join,
-  Modal,
-  Opportunities,
-  Questions,
-  Reviews,
-  Ticker,
-} from './components'
+import { Header, Hero } from './components'
 
 function App() {
-  const [modalActive, setModalActive] = useState(false)
+  // const [modalActive, setModalActive] = useState(false)
   return (
     <>
-      <Header setActive={setModalActive} />
+      <Header />
       <div className="container">
-        <Hero setActive={setModalActive} />
+        <Hero />
         {/* <About /> */}
       </div>
       {/* <Join /> */}

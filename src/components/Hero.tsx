@@ -1,8 +1,6 @@
-import { FC } from 'react'
 import Picture from '../assets/Picture.svg'
-import { IOpenModal } from '../types/models'
 
-export const Hero: FC<IOpenModal> = ({ setActive }) => {
+export const Hero = () => {
   return (
     <section id="start" className="flex flex-col md:flex-row h-fit md:h-[567px] mt-[30px]">
       <div className="flex w-fit md:w-[699px] flex-col justify-center">
@@ -13,10 +11,7 @@ export const Hero: FC<IOpenModal> = ({ setActive }) => {
           Професійна онлайн спільнота, що об’єднує українських фахівців культурної та креативної
           сфери
         </p>
-        <button
-          className="w-[244px] h-[72px] mx-auto md:mx-0 bg-myblue rounded-[20px] text-white font-semibold hover:bg-myblue-light active:bg-myblue transition-all ease-in-out animate-slideUp delay-1500 opacity-0"
-          onClick={() => setActive(true)}
-        >
+        <button className="w-[244px] h-[72px] mx-auto md:mx-0 bg-myblue rounded-[20px] text-white font-semibold hover:bg-myblue-light active:bg-myblue transition-all ease-in-out animate-slideUp delay-1500 opacity-0">
           Давай знайомитись
         </button>
       </div>
