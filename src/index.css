@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f4f2f0;
+    padding: 0;
+    margin: 0;
+    color: #0e0e0e;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+}
+
+@font-face {
+  font-family: 'Wattauchimma';
+  src: local('Wattauchimma'), url('./assets/fonts/Wattauchimma.ttf') format('truetype');
+}
+
+.watt-font {
+  font-family: 'Wattauchimma';
+}
+
+.container {
+  @apply w-full max-w-[1192px] mx-auto px-2;
+}
+
+.button-effects {
+  @apply hover:shadow-md hover:translate-y-[-2px] active:translate-y-[1px] active:shadow-none	 transition-all ease-in-out;
+}
+
+/* Navlink animation */
+
+.navlink-active {
+  @apply relative text-myblue after:block after:absolute after:right-0 after:bottom-[-3px] after:h-[2px] after:transition-all after:duration-200 after:w-full after:left-0 after:bg-myblue cursor-pointer;
+}
+
+.navlink-effects {
+  @apply relative hover:text-myblue after:block after:absolute after:right-0 after:bottom-[-3px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-200 hover:after:w-full hover:after:left-0 hover:after:bg-myblue cursor-pointer;
+}
+
+/* Ticker animation */
+.animation-wrap {
+  @apply relative flex overflow-hidden select-none gap-5 before:after:h-full before:after:w-[10%] before:after:top-0 before:after:absolute before:after:z-10 before:after:pointer-events-none before:left-0 after:right-0;
+}
+
+.animation-item {
+  @apply flex items-center flex-shrink-0 gap-5 justify-around min-w-full;
+}
+
+/* Featers CSS  */
+.features > li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.features > li:nth-child(even) > div {
+  justify-content: flex-end;
+}
+
+/* Reviews CSS  */
+
+@media (max-width: 1113px) {
+  .reviews > li:nth-child(odd) {
+    margin-top: 0px !important;
+  }
+  .reviews > li:nth-child(7) {
+    margin-top: 0px !important;
+  }
+  .reviews > li:nth-child(9) {
+    margin-top: 0px !important;
+  }
+  .reviews > li {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
+}
+.reviews > li:nth-child(odd) {
+  margin-top: 50px;
+}
+
+.reviews > li:nth-child(7) {
+  margin-top: -20px;
+}
+
+.reviews > li:nth-child(9) {
+  margin-top: -20px;
+}
+
+/* Accordion Css */
+
+details[open] .arrow {
+  transform: scale(1, -1);
+}
