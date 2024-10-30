@@ -18,20 +18,20 @@ function App() {
   return (
     <>
       <Header setActive={setModalActive} />
-      <div className='container'>
+      <div className="container">
         <Hero setActive={setModalActive} />
-        <About />
+        {/* <About /> */}
       </div>
-      <Join />
-      <div className='container'>
+      {/* <Join /> */}
+      {/* <div className='container'>
         <Opportunities />
         <Features />
       </div>
       <Ticker setActive={setModalActive} />
       <Reviews />
       <Questions />
-      <Footer />
-      <Modal active={modalActive} setActive={setModalActive} />
+      <Footer /> */}
+      {/* <Modal active={modalActive} setActive={setModalActive} /> */}
     </>
   )
 }
